@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&family=Nunito&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #191e2e;
+}
+header{
+    background: white;
+    padding: 20px;
+}
+header,h1{
+    color: #191e2e;
+    text-align: center;
+    font-family: Asap, sans-serif;
+}
+.Score-board{
+    border: 3px solid white;
+    border-radius: 4px;
+    width: 200px;
+    margin: 20px auto;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px 20px;
+    font-family: Asap , sans-serif;
+    position: relative;
+}
+.badge{
+    background: #eb5755;
+    color: white;
+    font-size: 14px;
+    font-family: Asap, sans-serif;
+    padding: 2px 14px;
+}
+#User-label{
+    position: absolute;
+    top: 30px;
+    left: -25px;
+}
+#Computer-label{
+    position: absolute;
+    top: 30px;
+    right: -32px;
+}
+.result{
+    font-size: 40px;
+    color: white;
+}
+.result,p{
+    text-align: center;
+    font-weight: bold;
+    font-family: Asap, sans-serif;
+}
+.choice{
+    border: 4px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px;
+    margin: 0 20px;
+    transition: all 0.3s ease;
+}
+.choices{
+    margin: 50px ;
+    text-align: center;
+}
+.choice:hover{
+    cursor: pointer;
+    background: #060914;
+}
+#paper{
+    width: 120px;
+}
+.action-message{
+    text-align: center;
+    color: white;
+    font-family: Asap,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.green-glow{
+    border: 4px solid #4dcc7d;/*adding a green glow border to the divs of userchoice to show win */
+    box-shadow: 0 0 10px #31b433;
+}
+.red-glow{
+    border: 4px solid #fc121b;/*adding a red glow border to the divs of userchoice to show lose */
+    box-shadow: 0 0 10px #d01115;
+}
+.grey-glow{
+    border: 4px solid #464647;/*adding a grey glow border to the divs of userchoice to show draw*/
+    box-shadow: 0 0 10px #252922;
+}
